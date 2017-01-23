@@ -16,14 +16,8 @@ public class LoginServiceTest
     }
     
     @Test
-    public void testUserIsBlocked()
+    public void testFoo()
     {
-        // TODO Implement this test
-    }
-
-    @Test
-    public void testMultipleAuthenticationFailuresThenAuthenticationSuccess()
-    {
-        // TODO Implement this test
+        // TODO Implement at least two unit tests verifying the LoginService interface behavior
     }
 }
