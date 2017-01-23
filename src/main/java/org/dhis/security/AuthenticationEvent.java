@@ -1,5 +1,8 @@
 package org.dhis.security;
 
+/**
+ * Abstraction for an authentication attempt.
+ */
 public class AuthenticationEvent
 {
     private String username;
