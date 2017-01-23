@@ -9,7 +9,7 @@ public class DefaultLoginService
     implements LoginService
 {
     /**
-     * Cache login attempts, where usernames are keys and User objects are values.
+     * Cache for login attempts where usernames are keys and User objects are values.
      */
     private final Cache<String, Integer> USERNAME_LOGIN_ATTEMPTS_CACHE = Caffeine.newBuilder()
         .build(); //TODO set appropriate expiration time for cache

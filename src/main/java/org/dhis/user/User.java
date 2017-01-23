@@ -1,5 +1,8 @@
 package org.dhis.user;
 
+/**
+ * User domain model object.
+ */
 public class User
 {
     private String username;
