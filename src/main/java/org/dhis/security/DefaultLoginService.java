@@ -16,12 +16,12 @@ public class DefaultLoginService
     
     private final int MAX_ATTEMPTS = 5;
         
-    public void registerAuthenticationFailure( User user )
+    public void registerAuthenticationFailure( AuthenticationEvent event )
     {
         // TODO Implement this method        
     }
 
-    public void registerAuthenticationSuccess( User user )
+    public void registerAuthenticationSuccess( AuthenticationEvent event )
     {
         // TODO Implement this method        
     }

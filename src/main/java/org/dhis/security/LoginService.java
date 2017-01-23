@@ -11,15 +11,15 @@ public interface LoginService
 {
     /**
      * Registers an authentication success.
-     * @param user the user attempting the authentication.
+     * @param event the authentication event.
      */
-    void registerAuthenticationFailure( User user );
+    void registerAuthenticationFailure( AuthenticationEvent event );
     
     /**
      * Registers an authentication failure.
-     * @param user the user attempting the authentication.
+     * @param event the authentication event.
      */
-    void registerAuthenticationSuccess( User user );
+    void registerAuthenticationSuccess( AuthenticationEvent event );
     
     /**
      * Indicates whether the user is blocked from further
