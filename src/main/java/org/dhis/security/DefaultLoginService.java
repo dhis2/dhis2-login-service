@@ -2,8 +2,7 @@ package org.dhis.security;
 
 import org.dhis.user.User;
 
-import com.github.benmanes.caffeine.cache.Cache;
-import com.github.benmanes.caffeine.cache.Caffeine;
+import com.github.benmanes.caffeine.cache.LoadingCache;
 
 public class DefaultLoginService
     implements LoginService
@@ -11,8 +10,9 @@ public class DefaultLoginService
     /**
      * Cache for login attempts where usernames are keys and login attempts are values.
      */
-    private final Cache<String, Integer> USERNAME_LOGIN_ATTEMPTS_CACHE = Caffeine.newBuilder()
-        .build(); //TODO Hint: you might want to provide additional configuration of this cache
+    private final LoadingCache<String, Integer> USERNAME_LOGIN_ATTEMPTS_CACHE = null;
+    
+    // TODO Instantiate and configure this cache (https://github.com/ben-manes/caffeine)
     
     @Override
     public void registerAuthenticationFailure( AuthenticationEvent event )
