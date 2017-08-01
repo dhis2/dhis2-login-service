@@ -13,13 +13,13 @@ public interface LoginService
      * Registers an authentication success.
      * @param event the authentication event.
      */
-    void registerAuthenticationFailure( AuthenticationEvent event );
-    
+    void registerAuthenticationSuccess( AuthenticationEvent event );
+
     /**
      * Registers an authentication failure.
      * @param event the authentication event.
      */
-    void registerAuthenticationSuccess( AuthenticationEvent event );
+    void registerAuthenticationFailure( AuthenticationEvent event );
     
     /**
      * Indicates whether the user is blocked from further
